@@ -1,0 +1,31 @@
+#Ignore everything
+*
+# Do not Ignore Sub directories
+!*/
+
+!README.md
+!.gitignore
+!comments.php
+!footer.php
+!functions.php
+!header.php
+!index.php
+!page-contact.php
+!page-gallery.php
+!page-home.php
+!page-services.php
+!page.php
+!readme.txt
+!rtl.css
+!screenshot.png
+!screenshot.svg
+!search.php
+!sidebar.php
+!single.php
+!style.css
+!template-parts/content-goto.php
+!template-parts/content-gallery.php
+!template-parts/content-intro.php
+!template-parts/content-testimonials.php
+!template-parts/content-services.php
+languages/
