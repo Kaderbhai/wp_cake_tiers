@@ -15,6 +15,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
 <!-- BOOTSTRAP CORE CSS -->
 <link href="<?php bloginfo('stylesheet_directory'); ?>/assets/css/bootstrap.min.css" rel="stylesheet">	
@@ -40,10 +41,12 @@
 
 <!-- HEADER 
 ============================================= -->
+<hr class="margin">
 <header class="site-header" role="banner">
 	
 	<!-- NAVBAR 
 	============================================= -->
+	
 	<div class="container-fluid" id="navbar-con">
 		<div class="navbar-wrapper">
 			<div class="navbar navbar-default navbar-center">
@@ -64,7 +67,26 @@
 							'depth' 			=> 2,
 							'container'			=> 'nav',
 							'container_class'	=> 'navbar-collapse collapse',
-							'menu_class'		=> 'nav navbar-nav',
+							'menu_class'		=> 'nav navbar-nav navbar-left',
+							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+							'walker'            => new wp_bootstrap_navwalker()
+						
+						)	);
+					?>
+						
+						<a class="navbar-brand" href="http://localhost/home">
+							<img class="logo-image img-responsive" src="/wp-content/themes/cakes/assets/img/cake_tiers_logo5.png" alt="Cake Tiers Logo">
+						</a>					
+					
+					<?php 
+						wp_nav_menu( array(
+						
+							'theme_location'	=> 'secondary',
+							'depth' 			=> 2,
+							'container'			=> 'nav',
+							'container_class'	=> 'navbar-collapse collapse',
+							'menu_class'		=> 'nav navbar-nav navbar-right',
+							'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
 							'walker'            => new wp_bootstrap_navwalker()
 						
 						)	);
@@ -76,3 +98,5 @@
 	</div> <!-- navbar container -->
 </header>
 <hr class="margin">
+
+

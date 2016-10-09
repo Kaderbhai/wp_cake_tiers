@@ -15,6 +15,8 @@ $gallery_home_text 			= get_field('gallery_home_text');
 $gallery_home_image_1 		= get_field('gallery_home_image_1');
 $gallery_home_image_2 		= get_field('gallery_home_image_2');
 $gallery_home_image_3 		= get_field('gallery_home_image_3');
+$gallery_home_button 		= get_field('gallery_home_button');
+$gallery_home_button_link   = get_field('gallery_home_button_link');
 
 $contact_link_title 		= get_field('contact_link_title');
 $contact_link_text 			= get_field('contact_link_text');
@@ -90,7 +92,7 @@ get_header(); ?>
 					</div>
 
 				
-				<button class="btn btn-lg" align="center"><a href="gallery.html">Come have a look</a></button>
+				<button class="btn btn-lg" align="center"><a href="<?php echo $gallery_home_button_link; ?>"><?php echo $gallery_home_button; ?></a></button>
 			</div>
 			<img class="border" src="/wp-content/themes/cakes/assets/img/border8.png" alt="border1">
 		</div>
@@ -101,7 +103,7 @@ get_header(); ?>
 ============================================= -->
 <section id="contact">
 	<div class="container">
-		<div class="row">
+		<div class="row row_contact">
 			<img class="border" src="/wp-content/themes/cakes/assets/img/border8.png" alt="border1">
 			<div class="col-sm-8 col-sm-offset-2">
 				<h2><?php echo $contact_link_title; ?></h2>
