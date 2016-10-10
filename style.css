@@ -253,6 +253,9 @@ h1, h2, h3, h4, h5 {
 .container-fluid {
   padding: 0px; }
 
+.img-responsive {
+  border: 2px solid #df71b2; }
+
 .badge.social {
   background-color: #df71b2;
   font-size: 27px;

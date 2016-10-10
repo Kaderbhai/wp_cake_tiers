@@ -75,7 +75,7 @@
 					?>
 						
 						<a class="navbar-brand" href="http://localhost/home">
-							<img class="logo-image img-responsive" src="/wp-content/themes/cakes/assets/img/cake_tiers_logo5.png" alt="Cake Tiers Logo">
+							<img class="logo-image" src="/wp-content/themes/cakes/assets/img/cake_tiers_logo5.png" alt="Cake Tiers Logo">
 						</a>					
 					
 					<?php 
