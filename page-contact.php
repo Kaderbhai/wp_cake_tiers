@@ -1,5 +1,10 @@
 <?php
 /*Template Name: Contact*/
+
+$contact_title 			= get_field('contact_title');
+$contact_intro_text 			= get_field('contact_intro_text');
+$contact_form    		= get_field('contact_form');
+
 get_header(); ?>
 
 	<!-- CONTACT
@@ -11,40 +16,13 @@ get_header(); ?>
 				<div id="content" class="col-sm-12">
 				
 					 <section class="main-content" align="center">
-						<h2>Get in Contact!</h2>
+						<h2><?php echo $contact_title; ?></h2>
 						<hr class="horizontal4">
-						<p class="lead">Have any questions about the course? Fell free to get in touch with me! I&rsquo;ll do my best to get back to you asap!.</p>
+						<p class="lead"><?php echo $contact_intro_text; ?></p>
 						
-						<form role="form" class="clearfix">
-								<div class="col-sm-6">
-									<div class="form-group"></div>
-										<label for="contact-name" class="sr-only">Name</label>
-										<input type="text" class="form-control input-lg"id="contact-name" placeholder="Your name.."></input>
-									</div><!-- form-group -->
-								
-								<div class="col-sm-6">
-									<div class="form-group"></div>
-									<label for="contact-email" class="sr-only">Email</label>
-									<input type="text" class="form-control input-lg"id="contact-email" placeholder="Your email.."></input>
-								</div><!-- form-group -->
-
-								<div class="col-sm-12">
-									<div class="form-group"></div>
-									<label for="contact-subject" class="sr-only">Subject</label>
-									<input type="text" class="form-control input-lg"id="contact-subject" placeholder="Your subject.."></input>
-								</div><!-- form-group -->
-								
-								<div class="col-sm-12">
-									<div class="form-group"></div>
-									<label for="contact-words" class="sr-only">Message</label>
-									<textarea type="text" class="form-control input-lg" id="contact-words" placeholder="Your message.." rows="8"></textarea>
-								</div><!-- form-group -->
-							<br>
-							<br/>
-							<input type="submit" class="btn btn-info btn-lg pull-right" value="Get in touch &raquo;"></input>
+							<?php echo $contact_form; ?>
 							
-						</form>
-					 
+							<input type="submit" class="btn btn-info btn-lg pull-right" value="Get in touch &raquo;"></input>					 
 					 </section><!-- main-content -->
 				<hr>
 				
