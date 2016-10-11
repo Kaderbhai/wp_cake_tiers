@@ -25,10 +25,11 @@
 !sidebar.php
 !single.php
 !style.css
-!template-parts/content-goto.php
-!template-parts/content-gallery.php
+!template-parts/content-contact.php
+!template-parts/content-gallery_home.php
 !template-parts/content-intro.php
-!template-parts/content-testimonials.php
-!template-parts/content-services.php
+!template-parts/content-reviews.php
+!template-parts/content-services_home.php
+!template-parts/content-faq.php
 languages/
 

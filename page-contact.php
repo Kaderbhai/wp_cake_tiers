@@ -21,10 +21,9 @@ get_header(); ?>
 						<p class="lead"><?php echo $contact_intro_text; ?></p>
 						
 							<?php echo $contact_form; ?>
-							
-							<input type="submit" class="btn btn-info btn-lg pull-right" value="Get in touch &raquo;"></input>					 
+						<hr class="horizontal4">		
 					 </section><!-- main-content -->
-				<hr>
+
 				
 				</div> <!-- content col -->
 				
